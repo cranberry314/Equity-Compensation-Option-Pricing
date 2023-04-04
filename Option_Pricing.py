@@ -4,6 +4,7 @@ Created 3.15.2023
 Options Pricing
 
 @author: andrew finn
+MIT Open Source License
 """
 import pandas as pd
 import numpy as np
@@ -99,3 +100,6 @@ options_df['mcmc_option_value'] = options_df.apply(lambda x: monte_carlo_pricing
                                                                                  x['OPTLIFE - Life of Options - Assumption (# yrs) - INDL - NA - USD'],
                                                                                  x['OPTRFR - Risk Free Rate - Assumption (%) - INDL - NA - USD']/100,
                                                                                  x['OPTVOL - Volatility - Assumption (%) - INDL - NA - USD']/100), axis=1)
+
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
