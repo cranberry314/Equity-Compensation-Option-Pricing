@@ -102,6 +102,9 @@ options_df['mcmc_option_value'] = options_df.apply(lambda x: monte_carlo_pricing
                                                                                  x['OPTVOL - Volatility - Assumption (%) - INDL - NA - USD']/100), axis=1)
 
 
+# Output to tab separated file
+#options_df.to_csv(file_path + "/" + 'Priced_' + file_name, sep='\t', index = False)
+
 '''
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, 
 INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. 
